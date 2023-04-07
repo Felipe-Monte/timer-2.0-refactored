@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --body-color: #fff;
+  --span-color: #323238;
+  --box-sound-color: rgb(225, 225, 230);
+
+  --hover-color: #E1E1E6;
+  --hover-color-box: #c4c4c7;
+  --active-color: #02799D;
+}
+
+body {
+  background-color: var(--body-color);
+  font-size: 1.6rem;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+main {
+  display: flex;
+  gap: 19.3rem;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: auto;
+  width: 82.1rem;
+  height: 33.6rem;
+}
+
+.timer {
+  text-align: center;
+  width: 32.1rem;
+  height: 21.3rem;
+}
+
+.timer span {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12.1rem;
+  line-height: 14.8rem;
+
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--span-color);
+}
+
+.timer .controls {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  text-align: center;
+}
+
+.timer .controls button {
+  border-radius: 1rem;
+  padding: 0.4rem;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  transition: all .5s ease;
+}
+
+.timer .controls button:hover {
+  background: var(--hover-color)
+}
+
+.timer .controls button:active {
+  background: var(--active-color)
+}
+
+.sounds {
+  display: grid;
+  grid-template-areas:
+    "A B"
+    "C D";
+  place-content: center;
+  gap: 3.2rem;
+
+  width: 30.8rem;
+  height: 33.6rem;
+}
+
+.sounds .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 13.8rem;
+  height: 15.2rem;
+  background-color: var(--box-sound-color);
+  border-radius: 2.4rem;
+  border: none;
+
+  cursor: pointer;
+  transition: all .4s ease;
+}
+
+.sounds .card img {
+  width: 5.6rem;
+  height: 5.6rem;
+}
+
+.sounds .card:hover {
+  background: var(--hover-color-box);
+}
+
+.sounds .card:active {
+  background: var(--active-color);
+}
+
+.icon-sun-moon {
+  position: absolute;
+  top: 6.4rem;
+  right: 6.4rem;
+
+  width: fit-content;
+  border: none;
+  background-color: transparent;
+}
+
+.hide {
+  display: none;
+}
+
+svg path {
+  fill: var(--span-color);
+}
+
+.dark-mode {
+  --body-color: #000;
+  --span-color: #fff;
+  --box-sound-color: rgb(41, 41, 46);
+
+  --hover-color: #E1E1E6;
+  --hover-color-box: #c4c4c7;
+  --active-color: #02799D;
+}
+
+.enable {
+  background: var(--active-color) !important;
+}
+
+.container-card{
+  text-align: center;
+}
+
+input{
+  width: 100px;
+  position: relative;
+  right: 0;
+  left: 0;
+  bottom: 30px;
+}
