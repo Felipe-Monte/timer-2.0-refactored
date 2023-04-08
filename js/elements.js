@@ -1,4 +1,3 @@
-
 const buttonPlay = document.querySelector('#play')
 const buttonStop = document.querySelector('#stop')
 const buttonVolumeUp = document.querySelector('#volume-up')
